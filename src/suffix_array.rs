@@ -47,13 +47,6 @@ pub fn suffix_array_solution(input: &str) {
     arranged
     6 5 0 2 4 1 3
 
-    pseudo code:
-    * take the string and split them into a splice
-    * iterate through the splice and assign indexs in ascending order for n+1
-    * create a new splice with all suffixes included
-    * sort through the splice in lexographical order
-
-    "ChatGPT answer"
     * generate all n+1 suffixes
     * keep track of their starting indices
     * sort suffixes lexicographically
@@ -61,7 +54,7 @@ pub fn suffix_array_solution(input: &str) {
 
     */
 
-    /* Self Attemp
+    /* Self Attempt
     let n: usize = input.len();
     let mut indices: Vec<(&str, usize)> = Vec::new();
     let mut arranged_indices: Vec<usize> = Vec::new();
